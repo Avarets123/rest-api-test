@@ -27,12 +27,12 @@
      
        
    ### Содержимое папок:  
-   #### data - содержится файлы: comments.json, users.json, где хранятся пользователи и сообщения.  
+   #### data - содержит файлы: comments.json, users.json, которые являются псевдо-БД, где хранятся пользователи и сообщения
    #### middleware - промежуточные обработчики для Express  
    #### public - статичные файлы приложения  
-   #### routes - api- взаимодествия  
-   #### services - содержит сервис предоставляющий методы взаимодействия Б/Д, такие как: getAllComments, getCommentById, getCommentByIdAnDelete, getCommentByIdAndUpdate, addUser и т.д  
+   #### routes - файлы api 
+   #### services - содержит сервис предоставляющий методы взаимодействия БД, такие как: getCommentById, getCommentByIdAnDelete, getCommentByIdAndUpdate, addUser и т.д  
    #### utils - содержит файл с вспомогательной функцией для Handlebars
-   #### views - содержит файлы фронтенд части, которые динамически загружают данные с Б/Д 
+   #### views - содержит файлы фронтенд части, которые динамически загружают данные с БД 
    
    
