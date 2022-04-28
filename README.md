@@ -10,5 +10,8 @@
    ### Rest- пути  
    get '/auth/login' - вход в страницу авторизации.    
    post '/auth/login' - авторизация  
-   '/
-   
+   get '/auth/logout' - для выхода из сессии  
+     
+     
+   get '/auth/register' - вход в страницу регистрации  
+   post '/auth/register - регистрация пользователя
