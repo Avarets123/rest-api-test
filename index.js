@@ -56,7 +56,7 @@ class App {
 
         try {
             this.app.listen(this.port, () => {
-                console.log(`Сервер запущен на http://localhost:${this.port}`);
+                console.log(`Сервер запущен`);
             });
         } catch (e) {
             throw new Error('Сервер не запустился')
