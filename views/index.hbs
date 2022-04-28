@@ -1,0 +1,53 @@
+<div class="container">
+    <h2>REST-API</h2>
+
+    {{#if isAuth}}
+    {{else}}<p class="text-war">Для взаимодействия с rest-api необходима авторизация. Вы можете авторизоваться, перейдя по <a href="/auth/login">этой ссылке</a></p>
+     {{/if}}
+    <div class="wrapper">
+        {{#if isAuth}}<form method="post" action="/addPost" class="rest-form" >
+
+            <input name="message" id="message" type="text" class="rest-input">
+            <button class="rest-btn btn btn-success" type="submit"> Добавить</button>
+        </form>
+        {{else}}
+        {{/if}}
+
+    </div>
+
+    {{!-- <div class="data">
+        <div class="info-mess">
+            автор: <span class="author"> Осман</span>
+            <p>дата: <span class="data-mess"> 26.04.2022</span> </p>
+        </div>
+
+        <a href="/postEdit" class="edit btn btn-warning"> Изменить</a>
+        <span class="delete btn btn-danger"> Удалить</span>
+
+        <div class="message">
+            fdsafdfsfs
+        </div>
+    </div> --}}
+
+    {{#each message}}
+        <div class="data">
+            <div class="info-mess">
+                автор: <span class="author"> {{name}}</span>
+                <p>дата: <span class="data-mess"> {{theDate}}</span> </p>
+                <input type="hidden" value={{messageId}}>
+            </div>
+                {{#ifeq email  @root.user.email}}
+                    <a href="/editPost{{messageId}}" class="edit btn btn-warning"> Изменить</a>
+                    <form method="post" style="display: inline-block;" action="/delPost{{messageId}}"> <button type="submit" class="delete btn btn-danger">Удалить</button></form>
+                {{else}}
+                {{/ifeq}}
+
+            
+            <div class="message">
+                {{message}}
+            </div>
+
+        </div>
+    {{/each}}
+    
+</div>

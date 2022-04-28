@@ -1,0 +1,115 @@
+.container {
+    margin: 10% 0 0 20%;
+    width: 60rem;
+    min-height: 30rem;
+    border: 8px solid rgb(104, 9, 9);
+    padding-top: 2rem;
+}
+h2 {
+    text-align: center;
+    font-size: 49px;
+}
+
+.wrapper {
+    margin-top: 5rem;
+    margin-left: 10%;
+}
+
+.rest-input {
+    width: 40rem;
+    height: 3rem;
+    border-color: rgb(89, 0, 255);
+}
+
+.rest-btn {
+    height: 3rem;
+}
+
+.data {
+    margin-top: 2rem;
+    min-height: 5rem;
+    padding: 0.5rem;
+    text-align: left;
+
+}
+
+.info-mess {
+    padding: 0.2rem;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.message {
+    font-size: 24px;
+    margin-top: 7px;
+    padding: 0.7rem;
+    min-height: 5rem;
+    background: rgba(157, 198, 157, 0.555);
+    padding-left: 4rem;
+
+}
+
+.text-war {
+    text-align: center;
+    color: red;
+}
+
+.wrapper-auth {
+    padding: 1rem;
+    width: 30rem;
+    min-height: 20rem;
+    border: 10px solid rgb(17, 76, 101);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+.wrapper-auth input {
+    display: block;
+    width: 20rem;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding-left: 2rem;
+}
+
+
+.wrapper-auth button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    width: 7rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.text-register {
+    text-align: center;
+}
+
+
+
+.wrapper-nav {
+    margin-top: 1rem;
+    width: 100%;
+    height: 4rem;   
+}
+
+.wrapper-nav a {
+    display: inline-block;
+    margin-left: 20%;
+}
+
+
+.edit-page {
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+
+.edit-page input {
+    height: 2.5rem;
+    width: 20rem;
+}
+

@@ -1,0 +1,18 @@
+
+{{#if isAuth}}
+
+    <div class="wrapper-nav">
+        <a class="btn btn-info" href="/"> Главная</a>
+        <a class="btn btn-info" href="/auth/login">{{user.name}}</a>
+        <a class="btn btn-info" href="/auth/logout">Выйти</a>
+    </div>
+
+{{else}}
+
+    <div class="wrapper-nav">
+        <a class="btn btn-info" href="/"> Главная</a>
+        <a class="btn btn-info" href="/auth/login">Войти</a>
+        <a class="btn btn-info" href="/auth/register">Регистрация</a>
+    </div>    
+
+{{/if}}
