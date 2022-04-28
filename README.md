@@ -9,6 +9,6 @@
       
    ### Rest- пути  
    get '/auth/login' - вход в страницу авторизации.    
-   post '/auth/login' - авторизация
+   post '/auth/login' - авторизация  
    '/
    
